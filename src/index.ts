@@ -1,11 +1,11 @@
 import { User } from './models/User'
 
-const user = new User({ name: 'new', age: 10 })
+const user = User.buildUser({ id: 3 })
 // console.log(user)
 
-user.on('save', () => console.log('Data Saved!'))
-user.on('err', () => console.log('Err Occured!'))
+user.on('change', () => console.log(user))
+// user.on('save', () => console.log('Data Saved!'))
 
 // user.set({ name: 'New Name' })
 
-user.save()
+user.fetch()
