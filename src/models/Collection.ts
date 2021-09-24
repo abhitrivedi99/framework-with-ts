@@ -17,12 +17,13 @@ export class Collection<T, K> {
     }
 
     fetch(): void {
-        axios.get(this.rootUrl).then((res: AxiosResponse) => {
-            res.data.forEach((element: K): void => {
-                this.models.push(this.deserialize(element))
+        axios
+            .get(this.rootUrl)
+            .then((res: AxiosResponse) => {
+                res.data.forEach((element: K): void => {
+                    this.models.push(this.deserialize(element))
+                })
             })
-        })
-
-        this.trigger('change')
+            .then(() => this.trigger('change'))
     }
 }
