@@ -1,28 +1,29 @@
 {
-    "name": "sort-typerscript",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start:db": "json-server -w db.json",
-        "start:parcel": "parcel index.html",
-        "start": "concurrently npm:start:*",
-        "prettier-format": "prettier --config .prettierrc src/**/*.ts --write"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.31.1",
-        "@typescript-eslint/parser": "^4.31.1",
-        "concurrently": "^6.2.1",
-        "eslint": "^7.32.0",
-        "nodemon": "^2.0.12",
-        "prettier": "2.4.1",
-        "typescript": "^4.4.3"
-    },
-    "dependencies": {
-        "@types/node": "^16.9.2",
-        "axios": "^0.21.4"
-    }
+  "name": "sort-typerscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "false",
+  "scripts": {
+    "start:db": "json-server -w db.json",
+    "start:parcel": "parcel index.html",
+    "start": "concurrently npm:start:*",
+    "prettier-format": "prettier --config .prettierrc src/**/*.ts --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "concurrently": "^6.2.1",
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12",
+    "prettier": "2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@types/node": "^16.9.2",
+    "axios": "^0.21.4"
+  }
 }
